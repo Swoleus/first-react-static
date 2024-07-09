@@ -31,7 +31,7 @@ const Features = () => {
       </div>
       <div className="gpt3__features-container">
         {featuresData.map((item, index) => (
-          <Feature title={item.title} text={item.text} key={item.title + index} />
+          <Feature title={item.title} text={item.text} key={item.title + index} /> //.map will parse through the featuresData array, for each item (index point) it will then assign the title and text as the current indexed item in the array, as well as assigning a key which is title + (current)index.
         ))}
       </div>  
     </div>
